@@ -7,6 +7,7 @@ import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:image_picker/image_picker.dart';
+import '../components/alert.dart';
 import '../models/type_model.dart';
 import '../utils/constance.dart';
 
@@ -111,9 +112,7 @@ class AddVehicleController extends GetxController {
       // Vehicle added successfully
       final successMessage = 'Vehicle added successfully.';
       // Display success message to the user
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(successMessage)),
-      );
+      showAlertDialog(context,"طلبك قيد المراجعة");
     } else {
       // Vehicle adding failed
       final errorMessage = 'Failed to add vehicle.';
