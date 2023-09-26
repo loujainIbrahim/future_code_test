@@ -112,7 +112,7 @@ class RegisterPage extends StatelessWidget {
                     DefaultTextButton(text: 'الشروط والأحكام', function: () {}),
                     Text(
                       "متابعتك تعني موافقتك على ",
-                      style: TextStyle(fontSize: 15.sp, color: mainColor),
+                      style: TextStyle(fontSize: 14.sp, color: mainColor),
                     ),
                   ],
                 ),
