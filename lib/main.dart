@@ -24,7 +24,9 @@ class MyApp extends StatelessWidget {
           child: GetMaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Registration App',
-            theme: ThemeData(),
+             theme: ThemeData(
+            fontFamily: 'Somar', // Replace with your custom font family name
+          ),
             initialRoute: '/photo', // Set RegisterPage as the initial route
             getPages: [
               GetPage(name: '/photo', page: () => AddPhotoPage()),
