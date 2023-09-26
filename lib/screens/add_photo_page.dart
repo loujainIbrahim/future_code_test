@@ -67,7 +67,7 @@ class AddPhotoPage extends StatelessWidget {
                     GetBuilder<RegisterController>(
                       init: RegisterController(),
                       builder: (controller) {
-                        return Stack(
+                        return controller.imageFile != null?Stack(
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),
@@ -75,9 +75,31 @@ class AddPhotoPage extends StatelessWidget {
                                 child: CircleAvatar(
                                   radius: 100.r,
                                   backgroundImage:
-                                  controller.imageFile != null
-                                      ? FileImage(controller.imageFile!)
-                                      : null,
+                                   FileImage(controller.imageFile!)
+                                     ,
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              bottom: 20,
+                              right: 20,
+                              child: IconButton(
+                                icon: Icon(
+                                  Icons.add_circle_rounded,
+                                  color: Color(0xffEB6440),
+                                  size: 50.sp,
+                                ),
+                                onPressed: controller.selectImage,
+                              ),
+                            ),
+                          ],
+                        ):Stack(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Center(
+                                child: CircleAvatar(
+                                  radius: 100.r,
                                 ),
                               ),
                             ),

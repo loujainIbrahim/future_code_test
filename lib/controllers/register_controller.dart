@@ -27,7 +27,7 @@ class RegisterController extends GetxController {
     final pickedFile = await picker.pickImage(source: ImageSource.gallery);
     if (pickedFile != null) {
       imageFile = File(pickedFile.path);
-      print(imageFile);
+      update(); // Add this line to update the UI
     }
   }
 
