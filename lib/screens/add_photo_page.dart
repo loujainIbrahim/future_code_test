@@ -137,9 +137,8 @@ class AddPhotoPage extends StatelessWidget {
             child: elevate_button(
               text: "التالي",
               function: () {
-                Get.to(() {
-                  RegisterPage();
-                });
+                Get.to(
+                  RegisterPage());
               },
             ),
           ),
