@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:future_code_test/screens/add_photo_page.dart';
+import 'package:future_code_test/screens/onboarding_screens/screen_1.dart';
 import 'package:future_code_test/screens/register_screen.dart';
 import 'package:future_code_test/screens/splash_screen.dart';
 import 'package:future_code_test/utils/cache_helper.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
           ),
             initialRoute: '/splash', // Set RegisterPage as the initial route
             getPages: [
+              GetPage(name: '/screen1', page: () => Screen_1()),
               GetPage(name: '/photo', page: () => AddPhotoPage()),
               GetPage(name: '/register', page: () => RegisterPage()),
               GetPage  (name:'/splash',page:()=>SplashScreen()),

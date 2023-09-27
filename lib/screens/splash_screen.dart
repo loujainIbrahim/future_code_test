@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'add_photo_page.dart';
+import 'onboarding_screens/screen_1.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -21,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
       context,
       MaterialPageRoute(
           builder: (context) =>
-              AddPhotoPage()), // Replace with your main screen widget
+              Screen_1()), // Replace with your main screen widget
     );
   }
 

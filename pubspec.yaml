@@ -40,6 +40,7 @@ dependencies:
   http:
   image_picker:
   path_provider:
+  flutter_custom_clippers:
   material_design_icons_flutter:
   shared_preferences:
   flutter_form_builder:
